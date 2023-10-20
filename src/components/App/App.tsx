@@ -7,7 +7,6 @@ import Example1 from '../example-1/Example-1'
 
 type Props = {
   user: User
-  
 }
 
 export function App({user}:Props) {
@@ -24,7 +23,7 @@ export function App({user}:Props) {
           I am a new user {user.name}
         </p>
         <h2>Example-1</h2>
-        <Example1 name={'Marat'} email={'123@gmail.com'} ></Example1>
+        <Example1 name={'Marat'} email={'123@gmail.com'} age={34} ></Example1>
       </section>
       
     </div>
