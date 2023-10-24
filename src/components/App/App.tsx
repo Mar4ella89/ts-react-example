@@ -4,6 +4,9 @@ import './App.css';
 import { User } from './App.types';
 
 import Example1 from '../example-1/Example-1'
+import { UserComponent } from '../example-3/Example-3'
+import Example4 from '../example-4/Example-4'
+
 
 type Props = {
   user: User
@@ -24,6 +27,10 @@ export function App({user}:Props) {
         </p>
         <h2>Example-1</h2>
         <Example1 name={'Marat'} email={'123@gmail.com'} age={34} ></Example1>
+        <h2>Example-3</h2>
+        <UserComponent />
+        <h2>Example-4</h2>
+        <Example4 initialValue={'Enter something'} onSave={ (value)=>{console.log(`Greate! You enter: ${value}`)} }/>
       </section>
       
     </div>
