@@ -6,6 +6,7 @@ import { User } from './App.types';
 import Example1 from '../example-1/Example-1'
 import { UserComponent } from '../example-3/Example-3'
 import Example4 from '../example-4/Example-4'
+import {TextInputWithFocus} from '../example-5/Example-5'
 
 
 type Props = {
@@ -31,6 +32,9 @@ export function App({user}:Props) {
         <UserComponent />
         <h2>Example-4</h2>
         <Example4 initialValue={'Enter something'} onSave={ (value)=>{console.log(`Greate! You enter: ${value}`)} }/>
+        <h2>Example-5</h2>
+        <TextInputWithFocus />
+        
       </section>
       
     </div>
