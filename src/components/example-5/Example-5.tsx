@@ -9,6 +9,7 @@ export function TextInputWithFocus() {
       inputEl.current?.focus();
     };
     
+    //Можна робити посилання на інщі елементи
     const divRef = useRef<HTMLDivElement>(null);
     const textareaRef = useRef<HTMLTextAreaElement>(null);
     const selectRef = useRef<HTMLSelectElement>(null);
@@ -30,7 +31,7 @@ export function TextInputWithFocus() {
       <textarea ref={textareaRef}></textarea>
       <select ref={selectRef}></select>
           
-      <button onClick={increment}>Збільшити</button>
+          <button onClick={increment}>Збільшити</button>
     </>
   );
 }
