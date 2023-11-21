@@ -7,7 +7,7 @@ import { User } from './components/App/App.types';
 const user: User = {
   id: 1,
   name: 'Marat',
-  email: 'test@example.com',
+  email: 'test@example.com'
 }
 
 test('renders learn react link', () => {
